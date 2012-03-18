@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block body_id %}{{ article.slug }}{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+  <article>
+    <div class="date">{{ article.locale_date }}</div>
+
+    <h1>{{ article.title }}</h1>
+
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+
+    <div class="detail">
+      {#<div class="time">
+        {{ article.locale_date }}
+      </div>#}
+
+      <div class="category">
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      </div>
+
+      <div class="tags">
+        <ul>
+          {% for tag in article.tags %}
+              <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  {% if DISQUS_SITENAME %}
+    <div class="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_identifier = "{{ article.url }}";
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+    </div>
+  {% endif %}
+  </article>
+{% endblock %}

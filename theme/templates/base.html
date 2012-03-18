@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/YbEbVONS3yZB1DYf9YVHgZSgeMA/kylefuller.co.uk/14510.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/master.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.css" type="text/css" />
+
+  <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
+
+  {% if FEED_RSS %}
+    <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+  {% endif %}
+</head>
+
+<body id="{% block body_id %}{% endblock %}">
+  <section>
+    {% block content %}
+    {% endblock %}
+  </section>
+
+  <aside id="sidebar">
+    <h1>Kyle Fuller</h1>
+
+    <p>I’m <span>Kyle Fuller</span> and I’m a programmer residing in England. You can find me as <span><a href="http://twitter.com/kylefuller">@kylefuller</a></span> on Twitter, or <span><a href="https://github.com/kylef">@kylef</a></span> on Github.</p>
+
+
+    <h4>Some projects I am involved with include:</h4>
+    <ul>
+      {% for project in PROJECTS %}
+        <li><a href="{{ project.url }}">{{ project.name }}</a> — {{ project.description }}</li>
+      {% endfor %}
+    </ul>
+
+    <h4>Recent Articles</h4>
+    <ul>
+      {% for article in (dates|reverse|list)[0:6] %}
+        {% if not article.project %}
+          <li>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"title="Permalink to {{ article.title}}">{{ article.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+{% include 'github.html' %}
+{% include 'analytics.html' %}
+
+</body>
+</html>

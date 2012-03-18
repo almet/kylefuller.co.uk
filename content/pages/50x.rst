@@ -1,0 +1,6 @@
+:title: Internal Error
+
+An unexpected error seems to have occured.
+
+.. image:: /static/images/404.png
+

@@ -1,0 +1,211 @@
+body {
+    color: #323232;
+    font-weight:500; font-style:normal;
+    font-family: "Faricy New Web Light", Verdana, serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+::selection { background: #245d85; color: #fff; text-shadow: none; }
+
+h1 {
+    color: #245d85;
+    font-size: 20pt;
+    margin-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size-adjust:0.5;
+    font-weight:200;
+    font-style:normal;
+}
+
+a {
+    color: #245d85;
+    text-decoration: none;
+}
+
+p span {
+    color: #000;
+    font-weight: bold;
+}
+
+section {
+    width: 650px;
+    float: left;
+    margin: 10px 25px;
+}
+
+img.align-right {
+    padding-left: 15px;
+    float: right;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+aside#sidebar {
+    background: #ececec;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 700px;
+    padding-top: 10px;
+    min-width: 200px;
+
+    min-height: 100%;
+    height: 100%;
+
+    position: absolute;
+    position: fixed;
+    top: 0; bottom: 0;
+
+    border-left: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+aside h1 {
+    font-size: 20px;
+}
+
+a.github {
+    position: fixed;
+}
+
+.date {
+    font-size: small;
+    margin-top: 5px;
+}
+
+.detail div {
+    display: inline;
+    margin-right: 10px;
+    padding-left: 20px;
+    background-size: 14px;
+    font-size: 13px;
+}
+
+.detail ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.detail ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.detail .time {
+    background: url('../images/glyphicons_054_clock.png') no-repeat 0 0;
+    background-position: 0 1px;
+}
+
+.detail .category {
+    background: url('../images/glyphicons_049_star.png') no-repeat 0 0;
+    background-position: 0 1px;
+}
+
+.detail .tags {
+    background: url('../images/glyphicons_065_tag.png') no-repeat 0 0;
+    background-position: 0 1px;
+}
+
+.pagination {
+    min-height: 26px;
+    position: relative;
+}
+
+.pagination a {
+    background: #ececec;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    left: 0;
+    margin-left: 13px;
+    padding: 0 8px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 60px;
+}
+
+.pagination a.next {
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    left: auto;
+    margin: 0 13px 0 0;
+    right: 0;
+    text-align: left;
+}
+
+.pagination a:hover {
+    background: #245d85;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pagination a .arrow {
+    border-color: transparent #ececec transparent transparent;
+    border-style: solid;
+    border-width: 13px;
+    display: block;
+    height: 0;
+    left: -26px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.pagination a.next .arrow {
+    border-color: transparent transparent transparent #ececec;
+    left: auto;
+    right: -26px;
+}
+
+.pagination a:hover .arrow {
+    border-color: transparent #245d85 transparent transparent;
+}
+
+.pagination a.next:hover .arrow {
+    border-color: transparent transparent transparent #245d85;
+}
+
+.pagination p {
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 128px;
+    text-align: center;
+}
+
+body#page_404 #sidebar, body#page_403 #sidebar {
+    display: none;
+}
+
+body#page_50x #sidebar {
+    margin-left: 850px;
+}
+
+body#page_403 section, body#page_404 section, body#page_50x section {
+    width: 750px;
+}
+
+@media screen and (max-width: 750px) {
+    #sidebar {
+        display: none;
+    }
+
+    .github {
+        display: none;
+    }
+}
