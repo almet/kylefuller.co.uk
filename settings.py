@@ -1,6 +1,6 @@
 AUTHOR = 'Kyle Fuller'
 SITENAME = 'Kyle Fuller'
-SITEURL = 'http://kylefuller.co.uk'
+SITEURL = ''#'//kylefuller.co.uk'
 
 THEME = 'theme'
 
@@ -23,8 +23,9 @@ DEFAULT_PAGINATION = 5
 
 RELATIVE_URLS = False
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+ARTICLE_DIR = 'posts'
+ARTICLE_URL = 'posts/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
