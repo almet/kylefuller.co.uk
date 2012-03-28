@@ -1,4 +1,4 @@
-.codehilite pre {
+.codehilite pre, .highlight pre {
     background: #eee;
     border: 1px solid #eee;
 
@@ -10,7 +10,7 @@
     width: 600px;
 }
 
-.codehilite pre:hover {
+.codehilite pre:hover, .highlight pre:hover {
     background: #f5f5f5;
     border: 1px solid #eee;
 }
