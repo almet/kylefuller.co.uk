@@ -42,8 +42,18 @@ img.align-right {
     float: right;
 }
 
+img.align-center {
+    margin: 0 auto;
+    display: block;
+}
+
 article {
     margin-bottom: 50px;
+}
+
+article img {
+    padding: 0;
+    margin: 0;
 }
 
 aside#sidebar {
@@ -71,6 +81,10 @@ aside h1 {
 
 a.github {
     position: fixed;
+    position: absolute;
+    top: 0;
+    left: 551px;
+    border: 0;
 }
 
 .date {
