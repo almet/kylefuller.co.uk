@@ -57,6 +57,11 @@ Every command on this page should be entered into a SSH Prompt on DreamHost
 
 Once you have installed it, simply type ``irssi`` to run it.
 
-I asked Dreamhost if they would allow the use of a terminal application running all the time. Here is their response:
+I asked Dreamhost if they would allow the use of a terminal application running
+all the time. Here is their response:
 
-> You won’t be in “trouble” for running an irc program (no servers) on our servers. However if the system becomes unstable, it would likely be one of the first processes killed by our admins as our servers are meant for hosting web pages only. In general , we just don’t want users running bots or their own server daemons on our servers.”
+> You won’t be in “trouble” for running an irc program (no servers) on our
+> servers. However if the system becomes unstable, it would likely be one of
+> the first processes killed by our admins as our servers are meant for hosting
+> web pages only. In general , we just don’t want users running bots or their
+> own server daemons on our servers.”

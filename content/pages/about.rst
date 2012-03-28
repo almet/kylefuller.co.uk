@@ -6,9 +6,11 @@
     :height: 100px
     :align: right
 
-I'm Kyle Fuller, and this is my personal website. I am a 20 year old from England.
+I'm Kyle Fuller, and this is my personal website. I am a 20 year old from
+England.
 
-If you want to contact me, you can e-mail me at inbox @ this site's domain or hit me on IRC. I am kylef on freenode and EFnet.
+If you want to contact me, you can e-mail me at inbox @ this site's domain or
+hit me on IRC. I am kylef on freenode and EFnet.
 
 Skills
 ------
@@ -26,7 +28,8 @@ Software Preferences
 * Version control: Git
 * Language (interpreted): Python
 * Language (compiled): C, Objective-C
-* IRC Client: `znc <http://wiki.znc.in/>`_, `weechat <http://weechat.org/>`_, `Textual <http://www.codeux.com/textual/>`_, Colloquy iOS
+* IRC Client: `znc <http://wiki.znc.in/>`_, `weechat <http://weechat.org/>`_,
+  `Textual <http://www.codeux.com/textual/>`_, Colloquy iOS
 
 My dotfiles can be found `here <https://github.com/kylef/dotfiles/>`_.
 
