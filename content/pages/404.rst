@@ -3,5 +3,5 @@
 
 The page you are looking for doesn't seem to exist. Perhaps you can find the post you are looking for on the `Archives </archives.html>`_.
 
-.. image:: /static/images/404.png
+.. image:: /static/images/404.jpg
 

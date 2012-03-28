@@ -2,5 +2,5 @@
 
 An unexpected error seems to have occured.
 
-.. image:: /static/images/404.png
+.. image:: /static/images/404.jpg
 
